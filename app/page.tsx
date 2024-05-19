@@ -87,15 +87,13 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col flex-wrap gap-4">
-          {colors.map((color) => (
-            <Breadcrumbs key={color} color={color}>
-              <BreadcrumbItem>Home</BreadcrumbItem>
-              <BreadcrumbItem>Music</BreadcrumbItem>
-              <BreadcrumbItem>Artist</BreadcrumbItem>
-              <BreadcrumbItem>Album</BreadcrumbItem>
-              <BreadcrumbItem>Song</BreadcrumbItem>
-            </Breadcrumbs>
-          ))}
+          <Breadcrumbs key="secondary" color="secondary">
+            <BreadcrumbItem>Home</BreadcrumbItem>
+            <BreadcrumbItem>Music</BreadcrumbItem>
+            <BreadcrumbItem>Artist</BreadcrumbItem>
+            <BreadcrumbItem>Album</BreadcrumbItem>
+            <BreadcrumbItem>Song</BreadcrumbItem>
+          </Breadcrumbs>
 
           <div className="flex gap-4">
             <Checkbox defaultSelected color="default">Default</Checkbox>
