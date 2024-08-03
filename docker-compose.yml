@@ -1,6 +1,6 @@
 services:
   nextjs:
-    build: .
+    image: node:20
     container_name: nextjs
     working_dir: /app
     volumes:
@@ -8,8 +8,6 @@ services:
       - /app/node_modules
     ports:
       - "3000:3000"
-    environment:
-      - NODE_ENV=production
     command: sh -c "npm install && npm run build && npm start"
 
   nginx:
