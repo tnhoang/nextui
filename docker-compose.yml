@@ -1,6 +1,6 @@
 services:
   nextjs:
-    image: node:20
+    build: .
     container_name: nextjs
     working_dir: /app
     volumes:
